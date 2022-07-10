@@ -6,3 +6,4 @@
 - реализовать с помощью таблицы;
 - при задании стилей не создавайте ваши классы, а используйте псевдоклассы `first-child`, `last-child`, `nth-child`.
 
+![image](https://user-images.githubusercontent.com/8177749/178143076-a4921405-a9bf-40ff-9643-618208bcea3b.png)
