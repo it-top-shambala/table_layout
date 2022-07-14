@@ -1,0 +1,141 @@
+/*html and body styles*/
+html, body {    
+    width: 90%;           
+}
+
+/*Container style*/
+.container{
+    display: grid;    
+    grid-template-columns: minmax(20%, 2fr) repeat(4, 1fr);
+    grid-template-rows: 56% repeat(6, 16%) 20%;      
+}
+
+/*Table border radius*/
+.item:first-child{
+    border-radius: 20px 0px 0px 0px;
+}
+
+.item:nth-child(5){
+    border-radius: 0px 20px 0px 0px;
+}
+
+.item:last-child{
+    border-radius: 0px 0px 20px 0px;
+}
+
+.item:nth-last-child(5){
+    border-radius: 0px 0px 0px 20px;
+}
+
+/*Items styles*/
+.item{        
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.item:nth-child(5n+6){   
+    padding-left: 10%;
+    justify-content: flex-start;   
+}
+
+.item:nth-child(n+2):nth-child(-n+5){          
+    justify-content: space-between;    
+    flex-direction: column;    
+}
+
+.item-price:nth-child(-n+1){
+    margin-top: 4%;
+}
+
+.item:nth-child(n+37) > a{
+    padding: 0.4em 1.5em;
+    border: solid #b7b7b7 1px;
+    text-decoration: none;   
+}
+
+/*Items-price styles*/
+.item-price:nth-child(n+2){
+    margin: 0% 0% 6% 0%;
+}
+
+/*Contant styles font-price*/
+.font-price{
+    display: flex;
+    justify-content: center;
+}
+
+/*Fonts*/
+.item{
+    font-size: 23px;
+}
+
+.item:nth-child(n+2):nth-child(-n+5){
+    font-size: 26px;
+    font-weight: bolder;
+    color: white;
+}
+
+.item:first-child{
+    color: white;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.font-price{        
+    font-size: 50px;     
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item:nth-child(n+37) > a{
+    color: #444;
+    font-size: 25px;
+}
+
+/*Backround items*/
+.item:nth-child(n+6):nth-child(5n-3):nth-child(2n+1),
+.item:nth-child(n+6):nth-child(5n-1):nth-child(2n+1){
+    
+    background-color: #e7e7e7;
+}
+
+.item:nth-child(5n+6),
+.item:nth-child(5n+8),
+.item:nth-child(5n+10){
+    background-color: #dbdbdb;
+}
+
+.item:nth-child(5n+6):nth-child(odd),
+.item:nth-child(5n+8):nth-child(odd),
+.item:nth-child(5n+10):nth-child(odd){
+    background-color: #ececec;
+}
+
+.item:nth-child(5n+2),
+.item:nth-child(5n+4){
+    background-color: #f3f3f3;
+}
+
+.item:first-child{
+    background: rgb(120, 135, 171);   
+}
+
+.item:nth-child(2){
+    background: rgb(79, 98, 142);
+}
+
+.item:nth-child(3){
+    background: rgb(46, 65, 114);
+}
+
+.item:nth-child(4){
+    background: rgb(22, 41, 85);
+}
+
+.item:nth-child(5){
+    background: rgb(6, 21, 57);
+}
+
+.item:nth-child(n+37) > a{
+    background-color: #d3d3d3;   
+}
