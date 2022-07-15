@@ -1,0 +1,77 @@
+button{
+  font-size:1.1em;
+  padding: 6px 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: 0;
+
+}
+
+.item {
+  background:#D3D3D3;
+  text-align:center;
+  padding:5%;
+  font-family:"Arial";
+  font-size:18px;
+}
+
+.item:nth-child(-n+5){
+  color:white;
+  font-size:1.3em;
+}
+
+.item:first-child{
+display:flex;
+flex-direction:column;
+background:#5274CB;
+justify-content:center;
+ }
+
+.item:nth-child(2){
+background:	#425FA9;
+}
+
+.item:nth-child(3){
+background:	#263F7F;
+}
+
+.item:nth-child(4){
+background:	#1C2D59;
+}
+
+.item:nth-child(5){
+background:	#010C29;
+}
+
+.item:nth-child(5n+6){
+  text-align:left;
+}
+
+.item:nth-child(10n+6),
+.item:nth-child(10n+8),
+.item:nth-child(10n+10)
+{
+ background:	#a9a9a9 ;
+}
+
+.item:nth-child(10n+11),
+.item:nth-child(10n+13),
+.item:nth-child(10n+15)
+{
+ background:	#dcdcdc ;
+}
+
+.item:nth-child(10n+7),
+.item:nth-child(10n+9)
+{
+ background:	ligthgrey ;
+}
+
+.item:nth-child(10n+12),
+.item:nth-child(10n+14)
+{
+ background:	#c0c0c0 ;
+}
